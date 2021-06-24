@@ -1,0 +1,403 @@
+/*Police*/
+@font-face {
+    font-display: swap;
+    font-family: 'Calligraffitti';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/calligraffitti-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/calligraffitti-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* lato-regular - latin */
+
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato black';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+    
+:root {
+    --accent:#3693D6;
+    --text :#FFFFFF;
+
+}
+h1{
+    color: white;
+    font-family: 'calligraffitti';
+    font-size: 4.6rem;
+    transform: rotate(-10deg);
+}
+h2{
+    font-family: 'Lato black';
+    font-size: 3.2rem;
+}
+p{
+    font-family: 'Lato';
+}
+ul{
+    padding-inline-start: 0px;
+}
+
+.btn{
+    border: 2px solid #FFFFFF;
+    border-radius: 34px;
+}
+.btn-work{
+    margin-top: 2rem;
+    color: var(--text);
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    width: 13rem;
+    height: 3.2rem;
+}
+.btn-hero{
+    border:var(--accent);
+    font-family: 'Lato black';
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    width: 17rem;
+    height: 5rem;
+    margin-top: 12rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--accent);
+}
+.btn-hero a{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+.arrow-hero{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1.6rem;
+    height: 1.5rem;
+}
+/*layout*/
+
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+@media  screen and (min-width:36em) {
+    .container{
+        width: 100%;
+        max-width: 55rem ;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+@media  screen and (min-width:48em) {
+    .container{
+        width: 100%;
+        max-width: 74rem ;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+@media  screen and (min-width:62em) {
+    .container{
+        width: 100%;
+        max-width: 95rem ;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+
+/* HEADER */
+
+header{
+    text-align: center;
+    background-image: url(../img-mobile/Photo\ montagnes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.logo-header{
+    width: 20rem;
+    height: 3rem;
+}
+
+@media  screen and (min-width:28em) {
+    header{
+        background-image: url(../img/Photo\ montagnes768.png);
+    }
+}
+
+@media  screen and (min-width:50em) {
+    header{
+        background-image: url(../img/Photo\ montagnes992.png);
+    }
+}
+
+/*Navigation*/
+.menu-link{
+    color: white;
+}
+.menu-item{
+    color:white;
+    padding: 1rem;
+}
+.menu-link-button{
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color:var(--accent);
+    background-color: white;
+    width: 10rem;
+    height: 3.3rem;
+    border-radius: 3.2rem;
+}
+.menu{
+    position:absolute;
+}
+
+
+@media screen and (min-width: 36em) { 
+    .toggle-menu {
+        display: none;
+    }
+    .menu,
+    .menu[hidden] {
+        display: flex;
+        visibility: visible;
+        position: static;
+        transform: translateX(0);
+        justify-content: end;
+    }
+}
+
+
+
+/* HERO */
+
+
+.section-hero{
+    padding-top: 8rem;
+    min-height: 50rem;
+    background-position: center;
+}
+
+
+/* ABOUT */
+
+
+.section-about{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    color: white;
+    min-height: 47rem;
+    background-color: #3693D6;
+    text-align: center;
+}
+.section-about p{
+    padding-top: 3rem;
+    font-size: 2.4rem;
+}
+
+/* WORK */
+
+
+.section-work{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+.section-work .list-work{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 6rem;
+}
+
+.description-content-work{
+    background-image: url(../img-mobile/Filtre\ bleu.svg);
+    color: var(--text);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+}
+.description-content-work h3{
+    font-size: 2.4rem;
+}
+.description-content-work p{
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    font-size: 1.4rem;
+}
+.description-content-work:hover{
+    opacity: 1;
+}
+.list-work-{
+    margin-right: auto;
+    margin-left: auto;
+}
+.list-work-item{
+    width:100%;
+    min-width: 27rem;
+    min-height:27rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.list-work-item:nth-child(1){
+    width: 100%;
+    background-image: url(../img-mobile/cold-daylight-fjord-1586298.png);
+    background-size: cover;
+}
+.list-work-item:nth-child(2){
+    width: 100%;
+    background-image: url(../img-mobile/adorable-animal-breed-434090.png);
+    background-size: cover;
+}
+.list-work-item:nth-child(3){
+    width: 100%;
+    background-image: url(../img-mobile/action-active-cold-2433353.png);
+    background-size: cover;
+}
+.list-work-item:nth-child(4){
+    width: 100%;
+    background-image: url(../img-mobile/adventure-adventurer-altitude-2577274.png);
+    background-size: cover;
+}
+.list-work-item:nth-child(5){
+    width: 100%;
+    background-image: url(../img-mobile/beatiful-landscape-cold-colors-2832052.png);
+    background-size: cover;
+}
+
+
+@media screen and (min-width:36em){
+        .section-work .list-work{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+        }
+        .list-work-item:nth-child(3){
+            width: 100%;
+            background-image: url(../img/active-cold576.png);
+            background-size: cover;
+            background-position: center;
+            grid-column: 1/-1;
+        }
+
+        .list-work-item{
+            width: 27rem;
+            height:27rem;
+        }
+
+}
+
+@media screen and (min-width:48em){
+    .section-work .list-work{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .list-work-item:nth-child(3){
+        min-height: 55rem;
+        background-image: url(../img/action-active-cold768.png);
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+    .list-work-item:nth-child(2){
+        background-image: url(../img/adorable-animal-breed768.png);
+        width: 100%;
+        grid-column: 2/-1;
+    
+    }
+}
+
+
+
+/*Contact*/ 
+
+.section-contact{
+    color: var(--accent);
+    text-align: center;
+    min-height: 53rem;
+}
+.swiper-slide *{ 
+    margin-top: 3rem;
+}
+
+.img-contact{
+    margin-right: auto;
+    margin-left: auto;
+    width: 14rem;
+    height: 14rem;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
+    width: 19rem;
+    height: 19rem;
+    
+}
+
+
+/*Footer*/
+footer{
+    color: var(--text);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.footer-content{
+    padding: 1rem;
+}
+.logo-footer{
+    width: 17rem;
+    height: 16rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.flex-reseau{
+    display: flex;
+    justify-content: center;
+}
+.reseau-picto{
+    padding:2rem;
+}
+.img-reseau-picto{
+    width: 2.2rem;
+    height: 2.2rem;
+}
